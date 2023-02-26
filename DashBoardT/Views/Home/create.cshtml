@@ -1,0 +1,25 @@
+﻿@model DashBoardT.DAL.entity.department;
+@{
+    ViewBag.title = "create";
+}
+
+<h1> Create Department </h1>
+
+<form class="form-group" method="post" asp-controller="Home" asp-action="create">
+    <label asp-for="departmentname"> Department name </label>
+    <input type="text" asp-for="departmentname" class="form-control">
+    <span class="text-danger" asp-validation-for="departmentname"></span>
+    <br />
+    <label asp-for="departmentcode"> Department code </label>
+    <input type="text" asp-for="departmentcode" class="form-control">
+    <span class="text-danger" asp-validation-for="departmentcode"></span>
+    <br />
+    <center>
+        <input type="submit" value="save" class="btn btn-primary">
+    </center>
+</form>
+
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

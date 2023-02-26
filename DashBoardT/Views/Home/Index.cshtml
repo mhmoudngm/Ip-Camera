@@ -1,0 +1,658 @@
+﻿@*@model IQueryable<DashBoardT.DAL.entity.department>*@
+@{
+    ViewBag.title = "Ip_camra";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>شركه اى بى للاجهزه والانظمه الامنيه</title>
+    <link href="~/home/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/home/css/boxicons.min.css" rel="stylesheet" />
+    <link href="~/home/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/home/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/home/css/style.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p>
+                        <i class="bx bxs-envelope"></i>
+                        <span>gmail.com</span>
+                    </p>
+                    <p>
+                        <i class="bx bxs-phone-call"></i>
+                        <span>+965 51520971</span>
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <div class="social-links">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="https://instagram.com/ip_camra?igshid=YmMyMTA2M2Y="><i class="bx bxl-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-left bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">شركه اى بى للاجهزه والانظمه الامنيه</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-left" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="#"
+                   class="btn btn-brand ms-lg-3"
+                   data-bs-toggle="modal"
+                   data-bs-target="#connectUs">Conect Us</a>
+            </div>
+        </div>
+    </nav>
+   
+
+    <div class="slider-wrapper owl-carousel owl-theme" id="hero-slider">
+        <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class=" my-3   text-center" style="font-style:italic;color:ghostwhite">
+                            افضل خدمات كاميرات مراقبة في الكويت لأعمال تركيب كاميرات مخفية وبدالات وأجهزة أمنية وأجهزة بصمة بأرخص الاسعار مع افضل <br />
+                            شركة تركيب كاميرات مراقبة بالكويت, خدماتنا 24 ساعة في كل مكان
+                        </h2>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#" class="btn btn-outline-light ms-md-3">Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="my-3 text-center" style="font-style:italic;color:ghostwhite">
+                            افضل خدمات كاميرات مراقبة في الكويت لأعمال تركيب كاميرات مخفية وبدالات وأجهزة أمنية وأجهزة بصمة بأرخص الاسعار مع افضل <br />
+                            شركة تركيب كاميرات مراقبة بالكويت, خدماتنا 24 ساعة في كل مكان
+                        </h2>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#" class="btn btn-outline-light ms-md-3">Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide3 min-vh-100 bg-cover d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="my-3   text-center" style="font-style:italic;color:ghostwhite">
+                            افضل خدمات كاميرات مراقبة في الكويت لأعمال تركيب كاميرات مخفية وبدالات وأجهزة أمنية وأجهزة بصمة بأرخص الاسعار مع افضل <br />
+                            شركة تركيب كاميرات مراقبة بالكويت, خدماتنا 24 ساعة في كل مكان
+                        </h2>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#" class="btn btn-outline-light ms-md-3">Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*added*@
+   <div class="container">
+        <div class="section-title-area">
+            <h1 class="section-title text-center">كاميرات مراقبة الكويت</h1>
+            <div class="section-desc">
+                <p class="text-center">
+                    خدمات<strong> تركيب كاميرات مراقبة</strong> بكل محافظات الكويت
+                    <span data-mce-style="color: #0000ff;">
+                        (العاصمة – حولي – الجهراء – الاحمدي – الفروانية – مبارك الكبير)
+                    </span>, تركيب بدالات واجهزة امنية متكاملة وجهاز البصمة والحضور بارخص الاسعار
+                </p>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="row g-4">
+                <div class="col-lg-6 col-sm-6">
+                 <div class="services-box">
+                <div class="wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                    <div class="feature-media">
+                       
+                    </div>
+                    
+                                <a title="كاميرات مراقبة منزلية" href="#"><h4>كاميرات مراقبة منزلية </h4></a>
+                     <div class="feature-item-content"><p>نقدم خدمات تركيب كاميرات مراقبة للمنزل بكل مكان لمتابعة كل ما ترغب بمراقبته, خصوصاً مراقبة الاطفال ومراقبة الخدم, وتسجيل كل ما يحدث بالبيت بدقة عالية ووضوح عالي, كما ويتوفر لدينا كاميرات خاصة للمراقبة الليلية, نوفر كاميرات مراقبة منزلية بارخص الاسعار.</p> </div>
+                </div>
+                </div>
+                </div>
+               
+                <div class="col-lg-6 col-sm-6">
+                 <div class="services-box">
+                <div class="wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                    <div class="feature-media">
+                        
+                    </div>
+                            <a title="كاميرات مراقبة صغيرة" href="#"><h4>كاميرات مراقبة صغيرة</h4></a>
+                     <div class="feature-item-content"><p>تركيب كاميرات مراقبة صغيرة ذات جودة عالية وممتازة وتتمتع بالمراقبة الليلية مع تسجيل بذاكرة كبيرة جداً, نقوم بتركيب هذه الكاميرات في كل مكان بالبيت والمكتب والكراج والمصانع والمطاعم والشركات, اعمال تركيب كاميرات مراقبة الكويت متوفرة 24 ساعة.</p> </div>
+                </div> 
+                </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                <div class="services-box">
+                <div class="wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                    <div class="feature-media">
+                        
+                    </div>
+                            <a title="كاميرات مراقبة مخفية" href="#"><h4>كاميرات مراقبة مخفية</h4></a>
+                    <div class="feature-item-content"><p>نقوم بتركيب هذا النوع من الكاميرات في جميع الاماكن وتكون مخفية بحيث لا يمكن لأي شخص معرفة مكان الكاميرا, حيث نقوم بتركيبها بشكل خاص في البنوك والمكاتب المالية وجميع الاماكن الحساسة, وبسعر بسيط جداً.</p> </div>
+                </div>
+                </div>
+                </div>
+                 <div class="col-lg-6 col-sm-6">
+                <div class="services-box">
+                <div class="wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                    <div class="feature-media">
+                        
+                    </div>
+                            <a title="افضل كاميرات المراقبة" href="#"><h4>افضل كاميرات المراقبة</h4></a>
+                     <div class="feature-item-content"><p>كافة كاميرات المراقبة لدينا اصلية تعمل بالظروف الليلية وبتصوير فائق الجودة Full HD, كما ونقوم بتركيب كاميرات مراقبه 4K عند الطلب, وتتميز شركتنا باسعارها المميزة والرخيصة, حيث أن اسعار كاميرات المراقبة لدينا رخيصة.</p> </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="~/home/img/icon6.png" alt="" />
+                                <div class="ms-4">
+                                    <h5>Digital Marketing</h5>
+                                    <p>
+                                        It is a long established fact that a reader will be
+                                        distracted by the readable content of a page
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="~/home/img/icon4.png" alt="" />
+                                <div class="ms-4">
+                                    <h5>E-mail Marketing</h5>
+                                    <p>
+                                        It is a long established fact that a reader will be
+                                        distracted by the readable content of a page
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="~/home/img/icon5.png" alt="" />
+                                <div class="ms-4">
+                                    <h5>Buisness Marketing</h5>
+                                    <p>
+                                        It is a long established fact that a reader will be
+                                        distracted by the readable content of a page
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="~/home/img/about.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="milestone" class="bg-cover">
+        <div class="container">
+            <div class="row gy-4 text-center justify-content-center">
+                <div class="col-lg-2 col-sm-6">
+                    <div class="display-4">436K</div>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="display-4">4976</div>
+                    <p class="mb-0">Lines of code</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="display-4">190K</div>
+                    <p class="mb-0">Total Downloads</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="display-4">567K</div>
+                    <p class="mb-0">YouTube Subscribers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class=" row g-4">
+                <div class="col-12 intro text-center">
+                    <h6>Our Services</h6>
+                    <h1>What We Do?</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="services-box">
+                        <img src="~/home/img/icon1.png" alt="" />
+                        <h5>Digital Marketing</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="services-box">
+                        <img src="~/home/img/icon2.png" alt="" />
+                        <h5>Digital Marketing</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="services-box">
+                        <img src="~/home/img/icon3.png" alt="" />
+                        <h5>Digital Marketing</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="services-box">
+                        <img src="~/home/img/icon4.png" alt="" />
+                        <h5>Digital Marketing</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="services-box">
+                        <img src="~/home/img/icon5.png" alt="" />
+                        <h5>Digital Marketing</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="services-box">
+                        <img src="~/home/img/icon6.png" alt="" />
+                        <h5>Digital Marketing</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro text-center">
+                    <h6>Our Work</h6>
+                    <h1>Our Recent Work</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="project-slider" class="owl-theme owl-carousel">
+            <div class="project">
+                <img src="~/home/img/project1.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Project Titel</h1>
+                    <h6>Project Subtitle</h6>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="~/home/img/project2.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Project Titel</h1>
+                    <h6>Project Subtitle</h6>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="/~/home/img/project3.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Project Titel</h1>
+                    <h6>Project Subtitle</h6>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="~/home/img/project5.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Project Titel</h1>
+                    <h6>Project Subtitle</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro text-center">
+                    <h6>Our Team</h6>
+                    <h1>Meet Our Crew Members</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <div class="img-wrapper">
+                            <img src="~/home/img/team_1.jpg" alt="" />
+                            <div class="overlay"></div>
+                            <div class="social-links">
+                                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                                <a href="https://instagram.com/ip_camra?igshid=YmMyMTA2M2Y="><i class="bx bxl-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h5>Mereven Mikanny</h5>
+                            <p>Markiting Cordinator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <div class="img-wrapper">
+                            <img src="~/home/img/team_2.jpg" alt="" />
+                            <div class="overlay"></div>
+                            <div class="social-links">
+                                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                                <a href="https://instagram.com/ip_camra?igshid=YmMyMTA2M2Y="><i class="bx bxl-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h5>Michel Hance</h5>
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <div class="img-wrapper">
+                            <img src="~/home/img/team_3.jpg" alt="" />
+                            <div class="overlay"></div>
+                            <div class="social-links">
+                                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                                <a href="https://instagram.com/ip_camra?igshid=YmMyMTA2M2Y="><i class="bx bxl-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h5>Kathryn Murphy</h5>
+                            <p>Ethical Hacker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-cover">
+        <div id="reviews-slider" class="owl-carousel owl-theme">
+            <div class="review">
+                <img src="~/home/img/team_1.jpg" alt="" />
+                <h4>Jonathon Doe Khan</h4>
+                <small>Web Develober</small>
+                <p class="lead">
+                    Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old
+                </p>
+            </div>
+            <div class="review">
+                <img src="~/home/img/team_2.jpg" alt="" />
+                <h4>Jonathon Doe Khan</h4>
+                <small>Web Develober</small>
+                <p class="lead">
+                    Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old
+                </p>
+            </div>
+            <div class="review">
+                <img src="~/home/img/team_3.jpg" alt="" />
+                <h4>Jonathon Doe Khan</h4>
+                <small>Web Develober</small>
+                <p class="lead">
+                    Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro text-center">
+                    <h6>Our Blog</h6>
+                    <h1>Latest Blog Post</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="blog-post">
+                        <a href="#" class="tag">web design</a>
+                        <img src="~/home/img/project5.jpg" alt="" />
+                        <small>01 Dec, 2022</small>
+                        <h4><a href="#">Web Design trends in 2022</a></h4>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-post">
+                        <a href="#" class="tag">web design</a>
+                        <img src="~/home/img/project2.jpg" alt="" />
+                        <small>01 Dec, 2022</small>
+                        <h4><a href="#">Web Design trends in 2022</a></h4>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-post">
+                        <a href="#" class="tag">web design</a>
+                        <img src="~/home/img/project3.jpg" alt="" />
+                        <small>01 Dec, 2022</small>
+                        <h4><a href="#">Web Design trends in 2022</a></h4>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <a href="#" class="navbar-brand">
+                            شركه اى بى للاجهزه والانظمه الامنيه
+                        </a>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                            <a href="https://instagram.com/ip_camra?igshid=YmMyMTA2M2Y="><i class="bx bxl-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">Copyright@2020. All rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade"
+         id="connectUs"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                 style="background-image: url(~/home/img/c2.jpg); min-height: 300px">
+                                <div></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="p-lg-5 col-12 row g-3">
+                                    <div>
+                                        <h1>Get in touch</h1>
+                                        <p>
+                                            Fell free to contact us and we will get back to you as
+                                            soon as possible
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">First name</label>
+                                        <input type="text"
+                                               class="form-control"
+                                               placeholder="Jon"
+                                               id="userName"
+                                               aria-describedby="emailHelp" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Last name</label>
+                                        <input type="text"
+                                               class="form-control"
+                                               placeholder="Doe"
+                                               id="userName"
+                                               aria-describedby="emailHelp" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Email address</label>
+                                        <input type="email"
+                                               class="form-control"
+                                               placeholder="Johndoe@example.com"
+                                               id="userName"
+                                               aria-describedby="emailHelp" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                        <textarea name=""
+                                                  placeholder="This is looking great and nice."
+                                                  class="form-control"
+                                                  id=""
+                                                  rows="4"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/home/js/jquery.min.js"></script>
+    <script src="~/home/js/bootstrap.bundle.min.js"></script>
+    <script src="~/home/js/owl.carousel.min.js"></script>
+    <script src="~/home/js/app.js"></script>
+</body>
+</html>

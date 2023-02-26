@@ -1,0 +1,53 @@
+﻿@model DashBoardT.Models.Employeevm;
+@{
+    ViewBag.title = "Create Employee";
+}
+
+<h2>Welcome to Create page</h2>
+
+<link href="~/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+<form class="form-group" method="post" asp-controller="Employee" asp-action="create" enctype="multipart/form-data">
+    <label asp-for="name"> Employee name </label>
+    <input type="text" asp-for="name" class="form-control">
+    <span class="text-danger" asp-validation-for="name"></span>
+    <br />
+    <label asp-for="address"> Employee address </label>
+    <input type="text" asp-for="address" class="form-control">
+    <span class="text-danger" asp-validation-for="address"></span>
+    <br />
+    <label asp-for="notes"> Employee notes </label>
+    <textarea rows="4" asp-for="notes" class="form-control"></textarea>
+    <span class="text-danger" asp-validation-for="notes"></span>
+    <br />
+    <label asp-for="salary"> Employee salary </label>
+    <input type="text" asp-for="salary" class="form-control">
+    <span class="text-danger" asp-validation-for="salary"></span>
+    <br />
+    <label asp-for="hiredate"> Employee hiredate </label>
+    <input type="date" asp-for="hiredate" class="form-control">
+    <span class="text-danger" asp-validation-for="hiredate"></span>
+    <br />
+    <label asp-for="departmentid">Department</label>
+    <select asp-for="departmentid" class="form-control" asp-items="@(SelectList)ViewBag.departmentlist">
+        <option>Choose Department</option>
+    </select>
+    <span class="text-danger" asp-validation-for="departmentid"></span>
+    <br />
+
+    <label asp-for="photourl"> Employee photo </label>
+    <input type="file" asp-for="photourl" class="form-control">
+    <br />
+    <label asp-for="cvurl"> Employee cv </label>
+    <input type="file" asp-for="cvurl" class="form-control">
+    <br />
+    <br />
+    <center>
+        <input type="submit" value="save" class="btn btn-primary">
+    </center>
+</form>
+
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

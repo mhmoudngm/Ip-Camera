@@ -1,0 +1,42 @@
+﻿@model DashBoardT.DAL.entity.employee;
+@{
+    ViewBag.title = "Update Employee";
+    Layout = "~/Views/layout/mainlayout.cshtml";
+}
+<h2>Welcome to Update Employee page</h2>
+<form class="form-group" method="post" asp-controller="Employee" asp-action="update">
+    <label asp-for="name"> Employee name </label>
+    <input type="text" asp-for="name" class="form-control">
+    <span class="text-danger" asp-validation-for="name"></span>
+    <br />
+    <label asp-for="address"> Employee address </label>
+    <input type="text" asp-for="address" class="form-control">
+    <span class="text-danger" asp-validation-for="address"></span>
+    <br />
+    <label asp-for="notes"> Employee notes </label>
+    <input type="text" asp-for="notes" class="form-control">
+    <span class="text-danger" asp-validation-for="notes"></span>
+    <br />
+    <label asp-for="salary"> Employee salary </label>
+    <input type="text" asp-for="salary" class="form-control">
+    <span class="text-danger" asp-validation-for="salary"></span>
+    <br />
+    <label asp-for="hiredate"> Employee hiredate </label>
+    <input type="text" asp-for="hiredate" class="form-control">
+    <span class="text-danger" asp-validation-for="hiredate"></span>
+    <br />
+    
+    <label asp-for="departmentid"> Department Id </label>
+    <input type="text" asp-for="departmentid" class="form-control">
+    <span class="text-danger" asp-validation-for="departmentid"></span>
+    <br />
+    <center>
+        <input type="submit" value="save" class="btn btn-primary">
+    </center>
+</form>
+
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+

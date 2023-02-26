@@ -1,0 +1,48 @@
+﻿@using Microsoft.Extensions.Localization
+@using DashBoardT.resource.Employee
+@model DashBoardT.Models.Employeevm;
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = "details";
+}
+
+<h2>@SharedLocalizer["Details"]</h2>
+
+<table>
+    <tr>
+        <td><h3>@Model.name</h3></td>
+    </tr>
+   
+    <tr></tr>
+    <tr>
+        <td><h3>   @Model.address </h3></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>
+            <img src="~/files/photos/@Model.photoname" width="100" height="120" />
+        </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td><h2><a href="~/files/docs/@Model.cvname">Download Cv</a></h2> </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td><h3> @Model.salary</h3></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td><h3>  @Model.notes  </h3></td>
+    <tr>
+        <td><h3> @Model.hiredate</h3></td>
+
+    </tr>
+
+
+
+</table>
+
+
+
+
